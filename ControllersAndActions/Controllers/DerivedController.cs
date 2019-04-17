@@ -1,0 +1,22 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+
+namespace ControllersAndActions.Controllers
+{
+	public class DerivedController : Controller
+	{
+		public ViewResult Index()
+		{
+			
+			return this.View("Result", $"This is a derived controller");
+		}
+
+		public ViewResult Headers()
+		{			
+			return this.View("DictionaryResult", this.Request.Headers.ToDictionary(kvp => kvp.Key, kvp => kvp.Value.First()));
+		}
+	}
+}

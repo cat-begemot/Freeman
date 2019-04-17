@@ -1,0 +1,25 @@
+﻿@{ this.Layout = null; }
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<title>Controllers and Actions</title>
+	<link rel="stylesheet" asp-href-include="lib/twitter-bootstrap/css/*.min.css" />
+</head>
+<body class="m-1 p-1">
+	<form method="post" asp-action="ReceiveForm" style="width: 500px">
+		<div class="form-group">
+			<label for="name">Name:</label>
+			<input class="form-control" name="name" />
+		</div>
+
+		<div class="forn-group">
+			<label for="city">City:</label>
+			<input class="form-control" name="city"/>
+		</div>
+
+		<button class="btn btn-primary text-center mt-2" type="submit">Submit</button>
+	</form>
+</body>
+</html>

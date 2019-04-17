@@ -1,0 +1,15 @@
+﻿@model DateTime
+@{ this.Layout = null; }
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<title>Controllers and Actions</title>
+	<link rel="stylesheet" href="@Url.Action("Index", "Example")" />
+</head>
+<body class="m-1 p-1">
+	<p>The day is: @this.ViewBag.Date.DayOfWeek</p>
+	<p>The message is: @this.ViewBag.Message</p>
+</body>
+</html>

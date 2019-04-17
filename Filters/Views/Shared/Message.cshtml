@@ -1,0 +1,38 @@
+﻿@{
+	this.Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<title>Filters</title>
+	<link rel="stylesheet" asp-href-include="lib/twitter-bootstrap/css/*.min.css" />
+</head>
+<body class="m-1 p-1">
+	@if(this.ViewData.Model is String)
+	{
+		@Model
+	}
+	else if(this.ViewData.Model is IDictionary<String, String> dict)
+	{
+		<table class="table table-sm table-striped table-bordered">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Value</th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach(var kvp in dict)
+				{
+					<tr>
+						<td>@kvp.Key</td>
+						<td>@kvp.Value</td>
+					</tr>
+				}
+			</tbody>
+		</table>
+	}
+</body>
+</html>
