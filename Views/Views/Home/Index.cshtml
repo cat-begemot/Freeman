@@ -1,0 +1,29 @@
+﻿@model String[]
+@{ this.Layout = "_Layout"; }
+
+
+@section Header
+	{
+	<div class="bg-success">
+		@foreach (String str in new[] { "Home", "List", "Edit" })
+		{
+			<a class="btn btn-sm btn-primary m-1" asp-action="str">@str</a>
+		}
+	</div>
+}
+
+@section Body
+{
+	This is a list of fruit names:
+	@foreach (String name in this.Model)
+	{
+		<span><b>@name</b></span>
+	}
+}
+
+@section Footer
+{
+	<div class="bg-success">
+		This is the footer
+	</div>
+}

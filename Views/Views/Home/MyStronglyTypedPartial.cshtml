@@ -1,0 +1,11 @@
+﻿@model IEnumerable<String>
+
+<div class="bg-warning">
+	This is the message from the Strong typed partial view
+	<ul>
+		@foreach(String str in this.Model)
+		{
+			<li>@str</li>
+		}
+	</ul>
+</div>

@@ -17,7 +17,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DependencyInjectionTests", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Filters", "Filters\Filters.csproj", "{57C77461-551F-4D72-80EF-4CE0D12F1204}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiControllers", "ApiControllers\ApiControllers.csproj", "{6874B919-A1C1-4FFD-9488-49905699DF30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiControllers", "ApiControllers\ApiControllers.csproj", "{6874B919-A1C1-4FFD-9488-49905699DF30}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Views", "Views\Views.csproj", "{6C7FD598-3004-4E2D-BA81-902959A8EB15}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UsingViewComponent", "UsingViewComponent\UsingViewComponent.csproj", "{ADB564ED-A401-45EC-A092-F7556228042D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +61,14 @@ Global
 		{6874B919-A1C1-4FFD-9488-49905699DF30}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6874B919-A1C1-4FFD-9488-49905699DF30}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6874B919-A1C1-4FFD-9488-49905699DF30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C7FD598-3004-4E2D-BA81-902959A8EB15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C7FD598-3004-4E2D-BA81-902959A8EB15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C7FD598-3004-4E2D-BA81-902959A8EB15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C7FD598-3004-4E2D-BA81-902959A8EB15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADB564ED-A401-45EC-A092-F7556228042D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADB564ED-A401-45EC-A092-F7556228042D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADB564ED-A401-45EC-A092-F7556228042D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADB564ED-A401-45EC-A092-F7556228042D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
